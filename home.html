@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="screen">
+      <video controls loop muted id="video">
+        <source src="wind.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="loading-screen">
+      <div class="box">
+        <div class="item-1">
+          <img src="wind.png" id="wind" />
+        </div>
+
+        <svg width="100%" height="100%">
+          <rect width="0%" height="11%" id="rect1" />
+          <rect width="0%" height="11%" y="10%" id="rect2" />
+          <rect width="0%" height="11%" y="20%" id="rect3" />
+          <rect width="0%" height="11%" y="30%" id="rect4" />
+          <rect width="0%" height="11%" y="40%" id="rect5" />
+          <rect width="0%" height="11%" y="50%" id="rect6" />
+          <rect width="0%" height="11%" y="60%" id="rect7" />
+          <rect width="0%" height="11%" y="70%" id="rect8" />
+          <rect width="0%" height="11%" y="80%" id="rect9" />
+          <!-- <rect width="0%" height="10%" y="90%" id="rect10" /> -->
+          <text
+            x="50%"
+            y="50%"
+            id="loaded"
+            dominant-baseline="middle"
+            text-anchor="middle"
+          >
+            100%
+          </text>
+          <text
+            x="50%"
+            y="50%"
+            dominant-baseline="middle"
+            text-anchor="middle"
+            id="project-wind"
+            fill="white"
+          >
+            Project Wind
+          </text>
+        </svg>
+      </div>
+    </div>
+    <div>
+      <h1 class="title">
+        <span class="v">W</span><span class="v">i</span><span class="v">n</span
+        ><span class="v">d</span> <br />
+      </h1>
+    </div>
+    <div id="buttons">
+      <h4 id="about">About</h4>
+      <h4 id="projects">Projects</h4>
+      <h4 id="experience">Experience</h4>
+      <h4 id="contact">Contact</h4>
+    </div>
+    <h1 id="center-name">
+      Ashan Panduwawala <br />
+      2020
+    </h1>
+    <h1 id="right-numbers">
+      1 -- 5
+    </h1>
+    <svg id="center-line">
+      <line
+        x1="0"
+        y1="0"
+        x2="100%"
+        y2="0"
+        style="stroke: rgb(0, 0, 0); stroke-width: 2;"
+      />
+    </svg>
+    <h2 id="number-next-to-center-line">01</h2>
+    <script src="animation.js"></script>
+  </body>
+</html>
