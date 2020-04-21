@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Arvo&family=Catamaran:wght@600&family=Gelasio:wght@700&family=Josefin+Sans:ital,wght@1,600&family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="screen">
       <video controls loop muted id="video">
-        <source src="wind.mp4" type="video/mp4" />
+        <source src="yasuo.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="loading-screen">
@@ -54,8 +58,10 @@
     </div>
     <div>
       <h1 class="title">
-        <span class="v">W</span><span class="v">i</span><span class="v">n</span
-        ><span class="v">d</span> <br />
+        <div class="title-block"><span>W</span></div>
+        <div class="title-block">i</div>
+        <div class="title-block">n</div>
+        <div class="title-block">d</div>
       </h1>
     </div>
     <div id="buttons">
@@ -65,20 +71,14 @@
       <h4 id="contact">Contact</h4>
     </div>
     <h1 id="center-name">
-      Ashan Panduwawala <br />
+      Website Portfolio <br />
       2020
     </h1>
     <h1 id="right-numbers">
-      1 -- 5
+      1 &mdash; 5
     </h1>
     <svg id="center-line">
-      <line
-        x1="0"
-        y1="0"
-        x2="100%"
-        y2="0"
-        style="stroke: rgb(0, 0, 0); stroke-width: 2;"
-      />
+      <line x1="0" y1="0" x2="100%" y2="0" id="line" />
     </svg>
     <h2 id="number-next-to-center-line">01</h2>
     <script src="animation.js"></script>

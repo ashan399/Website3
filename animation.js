@@ -26,7 +26,8 @@ let playVideo = function () {
 };
 
 let invertColor = function () {
-  console.log("here");
+  let video = document.getElementById("video");
+  video.currentTime = 17.5;
   document.getElementById("video").style.filter = "invert(.8) contrast(140%) ";
 };
 gsap.to("#loaded", 0.5, { opacity: 1, delay: 4 });
@@ -34,13 +35,13 @@ gsap.to("#wind,#loaded", 0.1, { opacity: "0", delay: 6.2 });
 let tl_play_vid = gsap.timeline();
 tl_play_vid
   .to("#project-wind", 0.5, { opacity: "1", delay: 6.2 })
-  .to("nothing", 1, { delay: 1 })
+  .to("nothing", 1, { delay: 0.9 })
   .call(playVideo)
   .to("#project-wind", 2, {
     x: "30",
     opacity: 0,
-    delay: 2,
     ease: "power1.inOut",
+    delay: 3.2,
   });
 gsap.to("body", 3, { backgroundColor: "#ffffff", delay: 4 });
 let tl_fadeout_resize = gsap
@@ -59,4 +60,22 @@ let tl_fadeout_resize = gsap
     ease: "circ.out",
   });
 // .set("#video", { filter: invert(1) });
-gsap.to(".title", 1, { opacity: 1, delay: 14 });
+
+gsap.from(".title-block", 1, { opacity: 0, x: "-300px", delay: 14 });
+gsap.from("#line", 1, { attr: { x2: "0%" }, delay: 14.4 });
+
+gsap.from("#number-next-to-center-line", 1, {
+  x: "-100px",
+  opacity: 0,
+  delay: 14.3,
+});
+gsap.from("#center-name,#right-numbers", 1, {
+  x: "-100px",
+  opacity: 0,
+  delay: 15,
+});
+gsap.from("#about,#projects,#experience,#contact", 1, {
+  x: "-100px",
+  opacity: 0,
+  delay: 15.3,
+});

@@ -1,8 +1,7 @@
 body {
   background-color: rgb(0, 0, 0);
   margin: 0;
-  /* font-size: calc(10px + (26 - 10) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300))); */
+  font-family: "Raleway", sans-serif;
 }
 
 .loading-screen {
@@ -70,11 +69,15 @@ svg {
   position: absolute;
   top: 40vh;
   left: 35vw;
-  font-size: 25vh;
+  font-size: 0;
   bottom: 70vh;
-  opacity: 0;
 }
 
+.title-block {
+  overflow: hidden;
+  display: inline-block;
+  font-size: 25vh;
+}
 #about {
   position: absolute;
   top: 5vh;
@@ -96,7 +99,7 @@ svg {
   right: 5vw;
 }
 #center-name {
-  writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
   text-orientation: mixed;
   position: absolute;
   left: 17vw;
@@ -121,6 +124,10 @@ svg {
 #number-next-to-center-line {
   position: absolute;
   left: 68vw;
-  top: 71.5vh;
+  top: 71.4vh;
   font-size: 2.5vh;
+}
+#line {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 2;
 }
